@@ -11,3 +11,8 @@ This is a project to investigate why records faster on rails when the request is
 After setting up your project and database run to import dummy data:
 
 `rake db:seed`
+
+
+* Finding
+
+It is the pagination, the call made from the controller was not paginated
