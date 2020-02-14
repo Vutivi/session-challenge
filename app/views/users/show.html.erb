@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @user.login %>
+</p>
+
+<p>
+  <strong>Avatar url:</strong>
+  <%= @user.avatar_url %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @user.url %>
+</p>
+
+<p>
+  <strong>Followers url:</strong>
+  <%= @user.followers_url %>
+</p>
+
+<p>
+  <strong>Subscriptions url:</strong>
+  <%= @user.subscriptions_url %>
+</p>
+
+<p>
+  <strong>Events url:</strong>
+  <%= @user.events_url %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
