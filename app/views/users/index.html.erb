@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
-
+<h1>Github users</h1>
+<%= paginate set_all_users %>
 <table>
   <thead>
     <tr>
@@ -9,21 +9,17 @@
       <th>Avatar url</th>
       <th>Url</th>
       <th>Followers url</th>
-      <th>Subscriptions url</th>
-      <th>Events url</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @users.each do |user| %>
+    <% set_all_users.each do |user| %>
       <tr>
         <td><%= user.login %></td>
         <td><%= user.avatar_url %></td>
         <td><%= user.url %></td>
         <td><%= user.followers_url %></td>
-        <td><%= user.subscriptions_url %></td>
-        <td><%= user.events_url %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
