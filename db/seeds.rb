@@ -7,7 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 users = GithubUsersService.all_users
-
-400.times do
-    User.create(users)
+all_users = Array.new.tap do |array|
+    400.times do
+        array << users
+    end
 end
+User.create(all_users)
