@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a project to investigate why records faster on rails when the request is made from the controller and not from the helper
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.6.3
+* Rails version: 5.1.7
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+After setting up your project and database run to import dummy data:
 
-* Deployment instructions
-
-* ...
+`rake db:seed`
