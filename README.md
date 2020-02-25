@@ -1,6 +1,6 @@
 # README
 
-This is a project to investigate why records faster on rails when the request is made from the controller and not from the helper
+This is a project to investigate why records pulls faster on rails when the request is made from the controller and not from the helper
 
 * Ruby version: 2.6.3
 * Rails version: 5.1.7
